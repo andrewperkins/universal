@@ -15,7 +15,11 @@
 	"postCreateCommand": "echo Created",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+	  "devpod": {
+	    "prebuildRepository": "mcr.microsoft.com/devcontainers/universal:2-linux"
+	  }
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
