@@ -4,23 +4,37 @@
 	"name": "Default Linux Universal",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
-
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
-
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
-
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "echo Created",
-
 	// Configure tool-specific properties.
 	"customizations": {
-	  "devpod": {
-	    "prebuildRepository": "mcr.microsoft.com/devcontainers/universal:2-linux"
-	  }
+		"devpod": {
+			"prebuildRepository": "mcr.microsoft.com/devcontainers/universal:2-linux"
+		},
+		"vscode": {
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"vivaxy.vscode-conventional-commits",
+				"prisma.prisma",
+				"bradlc.vscode-tailwindcss",
+				"rangav.vscode-thunder-client",
+				"christian-kohler.npm-intellisense",
+				"ms-python.python",
+				"ms-azuretools.vscode-docker",
+				"ms-toolsai.jupyter",
+				"rust-lang.rust-analyzer",
+				"GitHub.copilot",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"albert.TabOut",
+				"meganrogge.template-string-converter"
+			]
+		}
 	}
-
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
